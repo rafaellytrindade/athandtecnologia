@@ -1,0 +1,273 @@
+:root{
+    --cor-site: #F6921E;
+}
+
+
+.maxWidth{
+    max-width: 90em;/*1440px*/
+    
+}
+
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #135B76;
+    
+}
+
+
+.header_logo{
+    width: 7em;
+    height: 100%;
+    margin: 1em;
+}
+
+
+.header_nav{
+    background-color: var(--cor-site);
+    font-weight: bold
+}
+
+
+ul{
+    margin: 0;
+}
+
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+    
+}
+
+
+.header_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+
+    .header_nav{
+        background-color: initial;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+
+    .header_nav a{
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+
+
+    .header_nav a:hover{
+        background-color: color-mix(in srgb, var(--cor-site), #ffffff 80%);
+    }
+}
+
+
+.trailer{
+    background-color: #396986;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    
+}
+
+
+.trailer_title{
+    margin-top: 0;
+    padding-top: .5em;
+    color: var(--cor-site);
+    line-height: 1;
+    font-family: 'Hind Siliguri';
+}
+
+
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+    
+}
+
+
+.trailer_paragrafo{
+    font-size: 1.1em;
+
+}
+
+
+.trailer_botao{
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.trailer_botao:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+   
+}
+
+.trailer_video{
+    display: none;
+}
+
+
+.botao_pagina{
+    
+    margin-top: 1em;
+    padding: 1em 2em;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+    background: var(--cor-site);
+}
+
+.botao_pagina a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.botao_pagina:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+   
+}
+
+.titulo_sessao{
+    margin-left: 1em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .trailer{
+        background-image: url(imagens/resumo-liso-marrom-parede-fundo-layout-designstudioroomweb-templatebusiness-relatorio-com-liso.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+
+    .trailer_paragrafo{
+        margin-bottom: 2em;
+    }
+
+    .trailer_botão{
+        display: block;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .trailer_video {
+        display: block;
+    }
+
+    .trailer_video .tamanho{
+        border-radius: .3em;
+        margin-bottom: 1em;
+    }
+    
+}
+
+.main_content{
+    background-color: #135c7641;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title{
+    color: var(--cor-site);
+    font-family: 'Abel', sans-serif;
+}
+
+.icon_img{
+    width: 5.5em;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+
+.col-12{
+    width: 100%;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
+
+footer{
+    background-color: #135c76d5;
+    color: var(--cor-site);
+    padding: 1em;
+    text-align: center;
+}
+     
